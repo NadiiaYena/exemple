@@ -1,0 +1,44 @@
+
+form {
+    width: 800px;
+    margin: 20px auto;
+}
+    
+    label{
+    font-weight: bold;
+    font-size: 24px;
+    width: 150px;
+}
+.App-input-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+.address input,
+.dateOfBirth input,
+.name input{
+    display: block;
+    height: 26px;
+    width: 600px;
+    padding: 2px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:hover {
+    width: 80px;
+    height: 40px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 20px;
+    transition-duration: 600ms;
+}

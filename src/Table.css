@@ -1,0 +1,12 @@
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.inputTh {
+    width: 20px;
+}
+ th, td {
+    border: 1px solid red;
+ }
