@@ -4,9 +4,38 @@ table {
     margin: 20px auto;
 }
 
-.inputTh {
+/* .inputTh {
     width: 20px;
-}
+} */
+
  th, td {
     border: 1px solid red;
+   padding-left: 5px;
  }
+ 
+.input {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+ }
+
+ .filtrImg {
+    height: 20px;
+    width: 20px;
+ }
+ .city {
+    display: flex;
+    justify-content: space-between;
+ }
+.city2 {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city2:hover {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

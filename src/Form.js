@@ -26,11 +26,13 @@ function Form(props) {
         address: address,
         date: date
       };
-      props.onSubmit({data});
-      console.log(name)
-      console.log(date)
-      console.log(address)
-
+      
+  if (data.name !== '' && data.address !== '' && data.date !== '') {
+        props.onSubmit({data});
+        console.log(name)
+        console.log(date)
+        console.log(address)
+  }
       // очистити поля форми
       setName('');
       setAddress('');
@@ -39,18 +41,18 @@ function Form(props) {
 
     return (
       <>
-      <form className="App-input" id='form'>
+      <form className="App-input" id='form' >
         <div className="App-input-block name">
           <label htmlFor="name">Name:</label>
-          <input type = "text" onChange={handleNameChange} id='name' value={name} />
+          <input type = "text" onChange={handleNameChange} id='name' value={name} required />
         </div>
         <div className="App-input-block dateOfBirth">
           <label htmlFor="date">Date of birth:</label>
-          <input type = "date" onChange={handleDateChange} id='date' value={date} />
+          <input type = "date" onChange={handleDateChange} id='date' value={date} required />
         </div>
         <div className="App-input-block address">
           <label htmlFor="address">Address:</label>
-          <input type = "text" onChange={handleAddressChange}  id='address' value={address} />
+          <input type = "text" onChange={handleAddressChange}  id='address' value={address} required />
         </div>
       </form>
       <div className="App-button">
